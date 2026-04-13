@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: stock-platform-v7
+    env: python
+    buildCommand: pip install --upgrade pip && pip install --only-binary :all: -r requirements.txt
+    startCommand: streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

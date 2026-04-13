@@ -1,0 +1,6 @@
+streamlit>=1.35.0
+plotly>=5.22.0
+pandas
+numpy
+yfinance>=0.2.40
+requests>=2.31.0
